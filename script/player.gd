@@ -15,7 +15,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED * delta)
 		velocity.y = move_toward(velocity.y, 0, SPEED * delta)
 	
-	
+	if velocity != Vector2.ZERO:
+		animated_sprite_2d.play_movement_animation(velocity)
+	else:
+		animated_sprite_2d.play_idle_animation()	
 		
 	print(direction)
 	print(velocity)

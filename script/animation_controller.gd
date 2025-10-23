@@ -20,4 +20,4 @@ func play_movement_animation(velocity: Vector2):
 	
 func play_idle_animation():
 	if MOVEMENT_TO_IDLE.keys().has(animation):
-		play(MOVEMENT_TO_IDLE(animation))
+		play("idle")
