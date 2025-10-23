@@ -18,6 +18,3 @@ func play_movement_animation(velocity: Vector2):
 	elif velocity.y < 0:
 		play("walk")
 	
-func play_idle_animation():
-	if MOVEMENT_TO_IDLE.keys().has(animation):
-		play(MOVEMENT_TO_IDLE(animation))
