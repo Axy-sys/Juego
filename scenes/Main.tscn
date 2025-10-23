@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b05qlt3j6ysti"]
+
+[ext_resource type="PackedScene" uid="uid://c3b8slopaho5y" path="res://escenas/lobby.tscn" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://cio16cwtgrb46" path="res://escenas/Player.tscn" id="2_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://c05ram3g8gcjf" path="res://escenas/enemigo.tscn" id="3_r0du0"]
+
+[node name="Main" type="Node"]
+
+[node name="Lobby" parent="." instance=ExtResource("1_glv2v")]
+
+[node name="Enemigo" parent="." instance=ExtResource("3_r0du0")]
+
+[node name="Player" parent="." instance=ExtResource("2_uu6xs")]
+position = Vector2(101, 16)
