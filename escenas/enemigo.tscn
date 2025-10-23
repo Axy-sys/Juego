@@ -1,97 +1,94 @@
-[gd_scene load_steps=30 format=3 uid="uid://cio16cwtgrb46"]
+[gd_scene load_steps=27 format=3 uid="uid://c05ram3g8gcjf"]
 
-[ext_resource type="Script" uid="uid://csb4sr82urlt8" path="res://script/player/player.gd" id="1_322ac"]
-[ext_resource type="Texture2D" uid="uid://bsj1t26nwy68o" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/ATTACK 1.png" id="1_v37hv"]
-[ext_resource type="Texture2D" uid="uid://bgm4t5pfokrj3" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/IDLE.png" id="2_322ac"]
-[ext_resource type="Texture2D" uid="uid://q1fvgg0ovo0f" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/WALK.png" id="3_47y6d"]
-[ext_resource type="Script" uid="uid://cc57rcoqrep4g" path="res://script/player/animation_controller.gd" id="5_47y6d"]
-[ext_resource type="Script" uid="uid://cpnj2c7icciaw" path="res://script/player/combat_system.gd" id="6_kjc71"]
+[ext_resource type="Texture2D" uid="uid://bsj1t26nwy68o" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/ATTACK 1.png" id="1_hpq8b"]
+[ext_resource type="Texture2D" uid="uid://bgm4t5pfokrj3" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/IDLE.png" id="2_y7635"]
+[ext_resource type="Texture2D" uid="uid://q1fvgg0ovo0f" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/WALK.png" id="3_vu81h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhkpn"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(0, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjc71"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(96, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eywmv"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(192, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjqtk"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(288, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_swuh8"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(384, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aqkrn"]
-atlas = ExtResource("1_v37hv")
+atlas = ExtResource("1_hpq8b")
 region = Rect2(480, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_to073"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(0, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4a77h"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(96, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oi66q"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(192, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hgusv"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(288, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pljbq"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(384, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_de5e4"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(480, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x78n2"]
-atlas = ExtResource("2_322ac")
+atlas = ExtResource("2_y7635")
 region = Rect2(576, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mko2a"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(0, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4kru"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(96, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xgecc"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(192, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n2a45"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(288, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hm3xr"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(384, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pksdl"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(480, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vbfv"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(576, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1b8vb"]
-atlas = ExtResource("3_47y6d")
+atlas = ExtResource("3_vu81h")
 region = Rect2(672, 0, 96, 84)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_pebdo"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5phiq"]
 animations = [{
 "frames": [{
 "duration": 0.5,
@@ -172,34 +169,22 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v37hv"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3owwl"]
 radius = 4.0
 height = 32.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Enemigo" type="CharacterBody2D"]
+collision_layer = 2
 collision_mask = 6
-script = ExtResource("1_322ac")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_pebdo")
-animation = &"attack_1"
-frame_progress = 0.4875473
-script = ExtResource("5_47y6d")
+sprite_frames = SubResource("SpriteFrames_5phiq")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 3)
-shape = SubResource("CapsuleShape2D_v37hv")
+shape = SubResource("CapsuleShape2D_3owwl")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CombatSystem" type="Node2D" parent="."]
-script = ExtResource("6_kjc71")
-
-[node name="sword" type="Sprite2D" parent="CombatSystem"]
-
-[node name="Area2D" type="Area2D" parent="CombatSystem/sword"]
-collision_layer = 16
-collision_mask = 32
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CombatSystem/sword/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

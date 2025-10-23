@@ -183,7 +183,7 @@ script = ExtResource("1_322ac")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pebdo")
 animation = &"attack_1"
-frame_progress = 0.4875473
+frame_progress = 0.67317873
 script = ExtResource("5_47y6d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
