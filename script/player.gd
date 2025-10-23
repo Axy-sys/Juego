@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+class_name Player
+
+@onready var animated_sprite_2d: AnimationController = $AnimatedSprite2D
+
 const SPEED = 5000.0;
 
 func _physics_process(delta: float) -> void:
@@ -10,6 +14,8 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED * delta)
 		velocity.y = move_toward(velocity.y, 0, SPEED * delta)
+	
+	
 		
 	print(direction)
 	print(velocity)
