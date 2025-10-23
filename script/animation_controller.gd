@@ -9,9 +9,15 @@ const MOVEMENT_TO_IDLE = {
 
 func play_movement_animation(velocity: Vector2):
 	if velocity.x > 0:
+		flip_h = false
 		play("walk")
 	elif velocity.x < 0:
+		flip_h = true
 		play("walk")
+	elif velocity.y != 0:
+		play("walk")
+	else:
+		play("idle")
 	
 	if velocity.y > 0:
 		play("walk")
