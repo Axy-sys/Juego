@@ -1,10 +1,10 @@
 [gd_scene load_steps=29 format=3 uid="uid://cio16cwtgrb46"]
 
-[ext_resource type="Script" uid="uid://csb4sr82urlt8" path="res://script/player.gd" id="1_322ac"]
+[ext_resource type="Script" uid="uid://csb4sr82urlt8" path="res://script/player/player.gd" id="1_322ac"]
 [ext_resource type="Texture2D" uid="uid://bsj1t26nwy68o" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/ATTACK 1.png" id="1_v37hv"]
 [ext_resource type="Texture2D" uid="uid://bgm4t5pfokrj3" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/IDLE.png" id="2_322ac"]
 [ext_resource type="Texture2D" uid="uid://q1fvgg0ovo0f" path="res://assets/personaje/Knight 2D Pixel Art/Sprites/with_outline/WALK.png" id="3_47y6d"]
-[ext_resource type="Script" uid="uid://cc57rcoqrep4g" path="res://script/animation_controller.gd" id="5_47y6d"]
+[ext_resource type="Script" uid="uid://cc57rcoqrep4g" path="res://script/player/animation_controller.gd" id="5_47y6d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhkpn"]
 atlas = ExtResource("1_v37hv")
@@ -115,6 +115,11 @@ animations = [{
 "name": &"attack_1",
 "speed": 6.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"attack_2",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_to073")
@@ -181,8 +186,7 @@ script = ExtResource("1_322ac")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pebdo")
-animation = &"idle"
-frame_progress = 0.8967148
+animation = &"attack_2"
 script = ExtResource("5_47y6d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
