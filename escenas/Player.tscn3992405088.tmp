@@ -115,6 +115,11 @@ animations = [{
 "name": &"attack_1",
 "speed": 6.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"attack_2",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_to073")
@@ -181,8 +186,7 @@ script = ExtResource("1_322ac")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pebdo")
-animation = &"idle"
-frame_progress = 0.8967148
+animation = &"attack_2"
 script = ExtResource("5_47y6d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -190,4 +194,4 @@ position = Vector2(1, 3)
 shape = SubResource("CapsuleShape2D_v37hv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
